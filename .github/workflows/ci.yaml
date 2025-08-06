@@ -13,3 +13,9 @@ jobs:
         run: |
           ls
           pwd
+      
+      - name: "install terraform"
+        uses: hashicorp/setup-terraform@b9cd54a3c349d3f38e8881555d616ced269862dd #Version 3.1.2
+
+      - name: "terraform version"
+        run: terraform version
